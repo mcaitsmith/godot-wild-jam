@@ -1,0 +1,132 @@
+[gd_scene load_steps=13 format=3 uid="uid://dt3mmms37svf5"]
+
+[ext_resource type="Script" path="res://src/character_manager.gd" id="1_dqalt"]
+[ext_resource type="Script" path="res://src/layercontrol.gd" id="1_lovt1"]
+[ext_resource type="Script" path="res://src/game_manager.gd" id="1_stnvc"]
+[ext_resource type="Theme" uid="uid://dc6c1peo4pfyr" path="res://addons/dialogue_nodes/themes/bubbly.theme" id="5_jouea"]
+[ext_resource type="Script" path="res://Main.gd" id="6_p3mg2"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/dialogueBox.gd" id="7_1ws2c"]
+[ext_resource type="Resource" uid="uid://b6yryad4n8aml" path="res://Dialogue.tres" id="8_x3kkh"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="9_mts60"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="10_38cj8"]
+[ext_resource type="AudioStream" uid="uid://bs7uacwgicwl" path="res://voice.ogg" id="11_bc6m6"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_glys4"]
+script = ExtResource("9_mts60")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_828v6"]
+script = ExtResource("10_38cj8")
+
+[node name="game" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="canvas" type="CanvasLayer" parent="."]
+
+[node name="game_manager" type="Control" parent="canvas"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_stnvc")
+
+[node name="layercontrol" type="Control" parent="canvas"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_lovt1")
+
+[node name="background" type="Control" parent="canvas"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="sprite" type="TextureRect" parent="canvas/background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 4
+stretch_mode = 5
+
+[node name="character_manager" type="Control" parent="canvas"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dqalt")
+
+[node name="foreground" type="Control" parent="canvas"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="sprite" type="TextureRect" parent="canvas/foreground"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="dialogue" type="Control" parent="canvas"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(956, 531)
+theme = ExtResource("5_jouea")
+script = ExtResource("6_p3mg2")
+
+[node name="DialogueBox" type="Panel" parent="canvas/dialogue"]
+visible = false
+custom_minimum_size = Vector2(256, 128)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.248
+anchor_top = 0.804
+anchor_right = 0.716
+anchor_bottom = 0.94
+offset_left = -137.76
+offset_top = -128.32
+offset_right = 118.24
+offset_bottom = -0.320007
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(140, 60)
+script = ExtResource("7_1ws2c")
+dialogue_data = ExtResource("8_x3kkh")
+start_id = "START"
+options_alignment = 1
+options_vertical = true
+options_position = 2
+custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_glys4"), SubResource("RichTextEffect_828v6")])
+
+[node name="Button" type="Button" parent="canvas/dialogue"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.841
+anchor_top = 0.784
+anchor_right = 1.0
+anchor_bottom = 0.886
+offset_left = -44.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+pivot_offset = Vector2(88.664, 29.84)
+text = "Talk"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="canvas/dialogue"]
+stream = ExtResource("11_bc6m6")
+
+[connection signal="dialogue_signal" from="canvas/dialogue/DialogueBox" to="canvas/dialogue" method="_on_dialogue_box_dialogue_signal"]
+[connection signal="pressed" from="canvas/dialogue/Button" to="canvas/dialogue" method="_on_button_pressed"]

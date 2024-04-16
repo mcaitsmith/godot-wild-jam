@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://dt3mmms37svf5"]
+
+[ext_resource type="Script" path="res://src/character_manager.gd" id="1_dqalt"]
+[ext_resource type="PackedScene" uid="uid://di642hnghcv1o" path="res://prefabs/dialogue.tscn" id="1_hvupf"]
+[ext_resource type="PackedScene" uid="uid://0nw8rodjntl3" path="res://prefabs/character.tscn" id="2_ifnd8"]
+
+[node name="game" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="canvas" type="CanvasLayer" parent="."]
+
+[node name="layercontrol" type="Control" parent="canvas"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="background" type="Control" parent="canvas"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="sprite" type="TextureRect" parent="canvas/background"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="character_manager" type="Control" parent="canvas"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dqalt")
+
+[node name="character" parent="canvas/character_manager" instance=ExtResource("2_ifnd8")]
+layout_mode = 1
+
+[node name="foreground" type="Control" parent="canvas"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="sprite" type="TextureRect" parent="canvas/foreground"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="dialogue" parent="canvas" instance=ExtResource("1_hvupf")]

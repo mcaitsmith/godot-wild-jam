@@ -11,9 +11,23 @@ config_version=5
 [application]
 
 config/name="Godot Wild Jam"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://prefabs/dialogue.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*res://src/global.gd"
+Signalbus="*res://src/signalbus.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
+[dotnet]
+
+project/assembly_name="Godot Wild Jam"
 
 [editor]
 

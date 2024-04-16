@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=3 uid="uid://di642hnghcv1o"]
+
+[ext_resource type="Theme" uid="uid://dc6c1peo4pfyr" path="res://addons/dialogue_nodes/themes/bubbly.theme" id="1_pvf46"]
+[ext_resource type="Script" path="res://Main.gd" id="2_vt5ee"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/dialogueBox.gd" id="3_m7ut7"]
+[ext_resource type="Resource" uid="uid://b6yryad4n8aml" path="res://Dialogue.tres" id="4_t4s1b"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="5_wks6y"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="6_pk36j"]
+[ext_resource type="AudioStream" uid="uid://bs7uacwgicwl" path="res://voice.ogg" id="7_otqmg"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_glys4"]
+script = ExtResource("5_wks6y")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_828v6"]
+script = ExtResource("6_pk36j")
+
+[node name="dialogue" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(956, 531)
+theme = ExtResource("1_pvf46")
+script = ExtResource("2_vt5ee")
+
+[node name="DialogueBox" type="Panel" parent="."]
+visible = false
+custom_minimum_size = Vector2(256, 128)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.248
+anchor_top = 0.804
+anchor_right = 0.716
+anchor_bottom = 0.94
+offset_left = -137.76
+offset_top = -128.32
+offset_right = 118.24
+offset_bottom = -0.320007
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(140, 60)
+script = ExtResource("3_m7ut7")
+dialogue_data = ExtResource("4_t4s1b")
+start_id = "START"
+options_alignment = 1
+options_vertical = true
+options_position = 2
+custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_glys4"), SubResource("RichTextEffect_828v6")])
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.841
+anchor_top = 0.784
+anchor_right = 1.0
+anchor_bottom = 0.886
+offset_left = -44.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+pivot_offset = Vector2(88.664, 29.84)
+text = "Talk"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_otqmg")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
