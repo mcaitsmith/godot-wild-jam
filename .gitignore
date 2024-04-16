@@ -3,3 +3,8 @@
 
 # VS Code specific ignores
 .vscode/
+
+*.import
+
+.assets/sprites/*
+.assets/backgrounds/*
