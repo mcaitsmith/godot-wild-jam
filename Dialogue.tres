@@ -76,7 +76,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 241),
+"size": Vector2(300, 274),
 "speaker": ""
 },
 "3_1": {
@@ -90,14 +90,19 @@ nodes = {
 "signalValue": "character_enter,battler,left,smile"
 },
 "3_3": {
-"link": &"1_2",
-"offset": Vector2(340, -100),
+"link": &"3_5",
+"offset": Vector2(300, -180),
 "signalValue": "character_enter,beato,right,laugh"
 },
 "3_4": {
 "link": &"1_3",
 "offset": Vector2(940, -300),
 "signalValue": "character_expression,battler,cry"
+},
+"3_5": {
+"link": &"1_2",
+"offset": Vector2(300, -260),
+"signalValue": "music_badparty"
 }
 }
 variables = {}

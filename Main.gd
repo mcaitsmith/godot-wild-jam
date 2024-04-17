@@ -30,6 +30,12 @@ func _on_dialogue_box_dialogue_signal(value):
 			Signalbus.foreground.emit(signal_array[1])
 		"character":
 			Signalbus.character.emit(signal_array[1])
+		"music":
+			Signalbus.music.emit(signal_array[1])
+		"sound":
+			Signalbus.sound.emit(signal_array[1])
+		"stopmusic":
+			Signalbus.stopmusic.emit()
 	#match(value):
 		#'explode': explode()
 	pass # Replace with function body.

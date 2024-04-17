@@ -2,6 +2,11 @@ extends Node
 var active_characters = []
 var game_name = ""
 var gfloat= 1
+var is_paused = false
+var music_volume = 0
+var sound_volume = 0
+var volume_changed = false
+var active_music 
 @onready var right = Vector2((gfloat)*1200,0)
 @onready var center = Vector2((gfloat)*650,0)
 @onready var left = Vector2((gfloat)*100,0)

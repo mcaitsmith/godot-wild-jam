@@ -1,5 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://dt3mmms37svf5"]
+[gd_scene load_steps=17 format=3 uid="uid://dt3mmms37svf5"]
 
+[ext_resource type="Script" path="res://src/audio_manager.gd" id="1_6f756"]
 [ext_resource type="Script" path="res://src/character_manager.gd" id="1_dqalt"]
 [ext_resource type="Script" path="res://src/layercontrol.gd" id="1_lovt1"]
 [ext_resource type="Script" path="res://src/game_manager.gd" id="1_stnvc"]
@@ -10,6 +11,8 @@
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="9_mts60"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="10_38cj8"]
 [ext_resource type="AudioStream" uid="uid://bs7uacwgicwl" path="res://voice.ogg" id="11_bc6m6"]
+[ext_resource type="Script" path="res://src/pause_menu.gd" id="12_567ym"]
+[ext_resource type="Script" path="res://src/options_menu.gd" id="13_35yki"]
 
 [sub_resource type="RichTextEffect" id="RichTextEffect_glys4"]
 script = ExtResource("9_mts60")
@@ -17,11 +20,21 @@ script = ExtResource("9_mts60")
 [sub_resource type="RichTextEffect" id="RichTextEffect_828v6"]
 script = ExtResource("10_38cj8")
 
+[sub_resource type="Theme" id="Theme_1icsq"]
+Label/font_sizes/font_size = 32
+
 [node name="game" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="canvas" type="CanvasLayer" parent="."]
+
+[node name="audio_manager" type="Node2D" parent="canvas"]
+script = ExtResource("1_6f756")
+
+[node name="musicplayer" type="AudioStreamPlayer2D" parent="canvas/audio_manager"]
+
+[node name="soundplayer" type="AudioStreamPlayer2D" parent="canvas/audio_manager"]
 
 [node name="game_manager" type="Control" parent="canvas"]
 layout_mode = 3
@@ -128,5 +141,146 @@ text = "Talk"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="canvas/dialogue"]
 stream = ExtResource("11_bc6m6")
 
+[node name="pause_menu" type="Control" parent="canvas"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(961, 541)
+script = ExtResource("12_567ym")
+
+[node name="PanelContainer" type="PanelContainer" parent="canvas/pause_menu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -150.0
+offset_right = 250.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(250, 150)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="canvas/pause_menu/PanelContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="canvas/pause_menu/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="canvas/pause_menu/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.95
+alignment = 1
+
+[node name="continue" type="Button" parent="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "CONTINUE
+"
+
+[node name="options" type="Button" parent="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "OPTIONS"
+
+[node name="quit" type="Button" parent="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "QUIT GAME"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="canvas/pause_menu/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="options_menu" type="Control" parent="canvas"]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -250.0
+offset_right = 400.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(400, 250)
+theme = SubResource("Theme_1icsq")
+script = ExtResource("13_35yki")
+
+[node name="PanelContainer" type="PanelContainer" parent="canvas/options_menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="canvas/options_menu/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 150
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 150
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="canvas/options_menu/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="canvas/options_menu/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="music" type="Label" parent="canvas/options_menu/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Music Volume"
+horizontal_alignment = 1
+
+[node name="music_slider" type="HSlider" parent="canvas/options_menu/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+min_value = -30.0
+max_value = 30.0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="canvas/options_menu/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="sound" type="Label" parent="canvas/options_menu/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Sound Volume"
+horizontal_alignment = 1
+
+[node name="sound_slider" type="HSlider" parent="canvas/options_menu/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+min_value = -30.0
+max_value = 30.0
+
+[node name="close" type="Button" parent="canvas/options_menu/PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+size_flags_stretch_ratio = 1.6
+theme_override_font_sizes/font_size = 32
+text = "X"
+
 [connection signal="dialogue_signal" from="canvas/dialogue/DialogueBox" to="canvas/dialogue" method="_on_dialogue_box_dialogue_signal"]
 [connection signal="pressed" from="canvas/dialogue/Button" to="canvas/dialogue" method="_on_button_pressed"]
+[connection signal="pressed" from="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer/continue" to="canvas/pause_menu" method="_on_continue_pressed"]
+[connection signal="pressed" from="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer/options" to="canvas/options_menu" method="_on_options_pressed"]
+[connection signal="pressed" from="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer/quit" to="canvas/pause_menu" method="_on_quit_pressed"]
+[connection signal="options_closed" from="canvas/options_menu" to="canvas/pause_menu" method="_on_options_menu_options_closed"]
+[connection signal="options_open" from="canvas/options_menu" to="canvas/pause_menu" method="_on_options_menu_options_open"]
+[connection signal="value_changed" from="canvas/options_menu/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/music_slider" to="canvas/audio_manager" method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="canvas/options_menu/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer2/sound_slider" to="canvas/audio_manager" method="_on_sound_slider_value_changed"]
+[connection signal="pressed" from="canvas/options_menu/PanelContainer/close" to="canvas/options_menu" method="_on_close_pressed"]
