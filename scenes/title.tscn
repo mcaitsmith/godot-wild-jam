@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scenes/TitleScreen.gd" id="1_3d7ge"]
 [ext_resource type="Script" path="res://scenes/Background.gd" id="2_1klbb"]
-[ext_resource type="Texture2D" uid="uid://doqhitswxt6w1" path="res://assets/backgrounds/placeholder.png" id="2_bybyx"]
-[ext_resource type="Texture2D" uid="uid://y8tp3yrsf5o5" path="res://assets/sprites/battler cry.png" id="4_6dpw1"]
+[ext_resource type="Texture2D" uid="uid://dlt2irfqm26l5" path="res://assets/backgrounds/bgprototype.png" id="4_02ev8"]
+[ext_resource type="Texture2D" uid="uid://cijmfhbax4l70" path="res://assets/sprites/guard2 open.png" id="4_lrm7n"]
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
@@ -41,7 +41,7 @@ grow_vertical = 2
 [node name="Sprite2D" type="Sprite2D" parent="Background/ParallaxBackground/ParallaxLayer/Control"]
 visible = false
 position = Vector2(1081.85, 688)
-texture = ExtResource("2_bybyx")
+texture = ExtResource("4_02ev8")
 
 [node name="TextureRect" type="TextureRect" parent="Background/ParallaxBackground/ParallaxLayer/Control"]
 layout_mode = 0
@@ -49,16 +49,18 @@ offset_left = -518.15
 offset_top = -912.0
 offset_right = 2161.85
 offset_bottom = 1800.0
-texture = ExtResource("2_bybyx")
+texture = ExtResource("4_02ev8")
 expand_mode = 1
 stretch_mode = 5
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="Background/ParallaxBackground"]
+visible = false
 scale = Vector2(0.5, 0.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/ParallaxBackground/ParallaxLayer2"]
+visible = false
 position = Vector2(2512, 768)
-texture = ExtResource("4_6dpw1")
+texture = ExtResource("4_lrm7n")
 
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 1
