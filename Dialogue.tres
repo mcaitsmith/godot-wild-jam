@@ -10,39 +10,1456 @@ starts = {
 nodes = {
 "0_1": {
 "link": &"3_1",
-"offset": Vector2(-1140, -60),
+"offset": Vector2(-1460, -100),
 "start_id": "START"
 },
 "1_1": {
-"dialogue": "Yoooo baaaatora why are you going before me!
-",
-"offset": Vector2(-20, -300),
+"dialogue": "Yeah! Think you can just walk in?",
+"offset": Vector2(220, -60),
 "options": {
 0: {
 "condition": {},
-"link": &"3_3",
+"link": &"1_2",
 "text": ""
 }
 },
-"size": Vector2(300, 514.818),
+"size": Vector2(328, 514.818),
 "speaker": 2
 },
+"1_10": {
+"dialogue": "The blameless of body.",
+"offset": Vector2(3560, -180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_11",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_100": {
+"dialogue": "It's misdirection. Haven't you ever seen Die Hard 3?",
+"offset": Vector2(25460, -360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_101",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_101": {
+"dialogue": "WE HAVE NOT.",
+"offset": Vector2(25920, -400),
+"options": {
+0: {
+"condition": {},
+"link": &"1_102",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_102": {
+"dialogue": "But you see how I'm correct, right?",
+"offset": Vector2(26340, -420),
+"options": {
+0: {
+"condition": {},
+"link": &"1_103",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_103": {
+"dialogue": "FINE, WE GUESS.",
+"offset": Vector2(26780, -400),
+"options": {
+0: {
+"condition": {},
+"link": &"1_117",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_104": {
+"dialogue": "Hey, are you trying to be funny?",
+"offset": Vector2(20800, 420),
+"options": {
+0: {
+"condition": {},
+"link": &"1_105",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_105": {
+"dialogue": "Yeah, trying to be funny, bright boy?",
+"offset": Vector2(21240, 420),
+"options": {
+0: {
+"condition": {},
+"link": &"1_106",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_106": {
+"dialogue": "Is that what you are? Just a bright boy, trying to be funny?",
+"offset": Vector2(21680, 420),
+"options": {
+0: {
+"condition": {},
+"link": &"1_107",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_107": {
+"dialogue": "Because you tried that once already. And there's no way that trick works twice.",
+"offset": Vector2(22060, 420),
+"options": {
+0: {
+"condition": {},
+"link": &"1_108",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_108": {
+"dialogue": "Exactly. No way.",
+"offset": Vector2(22500, 380),
+"options": {
+0: {
+"condition": {},
+"link": &"1_109",
+"text": ""
+}
+},
+"size": Vector2(300, 372.001),
+"speaker": 1
+},
+"1_109": {
+"dialogue": "Uh. Unless...",
+"offset": Vector2(22940, 360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_110",
+"text": ""
+}
+},
+"size": Vector2(300, 372.001),
+"speaker": 2
+},
+"1_11": {
+"dialogue": "...",
+"offset": Vector2(4060, -260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_12",
+"text": "Blameless of body...?"
+},
+1: {
+"condition": {},
+"link": &"1_13",
+"text": "Seems a little goofy."
+},
+2: {
+"condition": {},
+"link": &"1_14",
+"text": "I will stand astride the Forge and create a blade so sharp, God herself would get cut."
+}
+},
+"size": Vector2(300, 555),
+"speaker": 0
+},
+"1_110": {
+"dialogue": "Don't tell me...",
+"offset": Vector2(23360, 340),
+"options": {
+0: {
+"condition": {},
+"link": &"1_111",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_111": {
+"dialogue": "What do you want me to say?? The rulebook says that's an acceptable answer!",
+"offset": Vector2(23780, 320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_112",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_112": {
+"dialogue": "You have got to kitten me. I mean KIDDING me.",
+"offset": Vector2(24200, 320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_113",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_113": {
+"dialogue": "Did you just make a cheeky little pun?",
+"offset": Vector2(24600, 280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_114",
+"text": ""
+}
+},
+"size": Vector2(300, 372.001),
+"speaker": 0
+},
+"1_114": {
+"dialogue": "WE WOULD NEVER.",
+"offset": Vector2(25000, 280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_115",
+"text": ""
+}
+},
+"size": Vector2(328, 372.001),
+"speaker": 3
+},
+"1_115": {
+"dialogue": "But does 42 count?",
+"offset": Vector2(25460, 240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_116",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_116": {
+"dialogue": "IT DOES. WELL DONE.",
+"offset": Vector2(25880, 220),
+"options": {
+0: {
+"condition": {},
+"link": &"1_117",
+"text": ""
+}
+},
+"size": Vector2(328, 372.001),
+"speaker": 3
+},
+"1_117": {
+"dialogue": "I can't believe it. You might be the first traveler to visit the Forge in years.",
+"offset": Vector2(27500, -400),
+"options": {
+0: {
+"condition": {},
+"link": &"1_118",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_118": {
+"dialogue": "Yeah, normally our riddles are way too tough! ",
+"offset": Vector2(27960, -420),
+"options": {
+0: {
+"condition": {},
+"link": &"1_119",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_119": {
+"dialogue": "Guess we'll have to hit you with something REALLY special to see if you're worthy.",
+"offset": Vector2(28380, -420),
+"options": {
+0: {
+"condition": {},
+"link": &"1_120",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_12": {
+"dialogue": "SHUT THY MOUTH.",
+"offset": Vector2(4560, -580),
+"options": {
+0: {
+"condition": {},
+"link": &"1_15",
+"text": ""
+}
+},
+"size": Vector2(328.001, 372),
+"speaker": 3
+},
+"1_120": {
+"dialogue": "This one's a classic. Courtesy of a buddy down in Egypt.",
+"offset": Vector2(28820, -420),
+"options": {
+0: {
+"condition": {},
+"link": &"1_121",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_121": {
+"dialogue": "WHAT WALKS ON FOUR LEGS IN THE MORNING",
+"offset": Vector2(29220, -420),
+"options": {
+0: {
+"condition": {},
+"link": &"1_122",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_122": {
+"dialogue": "TWO LEGS IN THE DAYTIME",
+"offset": Vector2(29660, -460),
+"options": {
+0: {
+"condition": {},
+"link": &"1_123",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_123": {
+"dialogue": "AND THREE LEGS IN THE EVENING?",
+"offset": Vector2(30080, -440),
+"options": {
+0: {
+"condition": {},
+"link": &"1_124",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_124": {
+"dialogue": "Hmm...",
+"offset": Vector2(30560, -460),
+"options": {
+0: {
+"condition": {},
+"link": &"1_125",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_125": {
+"dialogue": "WELL?",
+"offset": Vector2(30980, -460),
+"options": {
+0: {
+"condition": {},
+"link": &"1_126",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_126": {
+"dialogue": "...",
+"offset": Vector2(31400, -500),
+"options": {
+0: {
+"condition": {},
+"link": &"1_127",
+"text": "A human being. "
+},
+1: {
+"condition": {},
+"link": &"1_145",
+"text": "Hold on. Do you actually know the answer this time?"
+},
+2: {
+"condition": {},
+"link": &"1_170",
+"text": "It's gotta be... 42."
+}
+},
+"size": Vector2(300, 555),
+"speaker": 0
+},
+"1_127": {
+"dialogue": "Whoa, what? What is that?",
+"offset": Vector2(32011.5, -1069.06),
+"options": {
+0: {
+"condition": {},
+"link": &"1_128",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_128": {
+"dialogue": "Yeah, a human? Never heard of it.",
+"offset": Vector2(32400, -1080),
+"options": {
+0: {
+"condition": {},
+"link": &"1_129",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_129": {
+"dialogue": "Unless you're talking about a humanoid cat. Like a cat that walks on two legs. You know, like us.",
+"offset": Vector2(32800, -1060),
+"options": {
+0: {
+"condition": {},
+"link": &"1_130",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_13": {
+"dialogue": "LET THY WIT DETERMINE THY FATE.",
+"offset": Vector2(4600, -140),
+"options": {
+0: {
+"condition": {},
+"link": &"1_15",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_130": {
+"dialogue": "You talkin' about a catman? ",
+"offset": Vector2(33200, -1080),
+"options": {
+0: {
+"condition": {},
+"link": &"1_131",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_131": {
+"dialogue": "Do... humans not exist in this world?",
+"offset": Vector2(33620, -1100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_132",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_132": {
+"dialogue": "Whoa, whoa. Slow down. We can't answer universe-related questions like that.",
+"offset": Vector2(34040, -1120),
+"options": {
+0: {
+"condition": {},
+"link": &"1_133",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_133": {
+"dialogue": "Seriously! We were trying to keep the scope small! There's cats, and then you!",
+"offset": Vector2(34460, -1120),
+"options": {
+0: {
+"condition": {},
+"link": &"1_134",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_134": {
+"dialogue": "Wait, what am I?! Am I a cat?",
+"offset": Vector2(34860, -1140),
+"options": {
+0: {
+"condition": {},
+"link": &"1_135",
+"text": ""
+}
+},
+"size": Vector2(300.002, 372),
+"speaker": 0
+},
+"1_135": {
+"dialogue": "Who can say?",
+"offset": Vector2(35240, -1180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_136",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_136": {
+"dialogue": "But is that your final answer? Clarify yourself.",
+"offset": Vector2(35660, -1200),
+"options": {
+0: {
+"condition": {},
+"link": &"1_137",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_137": {
+"dialogue": "Four legs in the morning: that's a baby crawling around. Or kitten.",
+"offset": Vector2(36100, -1180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_138",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_138": {
+"dialogue": "Two legs during the day? An adult, walking on their on two feet.",
+"offset": Vector2(36560, -1120),
+"options": {
+0: {
+"condition": {},
+"link": &"1_139",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_139": {
+"dialogue": "Finally, three legs at night- an old person, using a cane to walk. ",
+"offset": Vector2(37000, -1140),
+"options": {
+0: {
+"condition": {},
+"link": &"1_140",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_14": {
+"dialogue": "NOW WE'RE TALKING.",
+"offset": Vector2(4580, 380),
+"options": {
+0: {
+"condition": {},
+"link": &"1_15",
+"text": ""
+}
+},
+"size": Vector2(328, 372.001),
+"speaker": 3
+},
+"1_140": {
+"dialogue": "Or, you know. An old cat.",
+"offset": Vector2(37460, -1100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_141",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_141": {
+"dialogue": "LOOK DEEP WITHIN YOURSELF.",
+"offset": Vector2(37860, -1100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_142",
+"text": ""
+}
+},
+"size": Vector2(328.002, 372),
+"speaker": 3
+},
+"1_142": {
+"dialogue": "YOU ARE... WORTHY OF THE FORGE.",
+"offset": Vector2(38320, -1060),
+"options": {
+0: {
+"condition": {},
+"link": &"1_143",
+"text": ""
+}
+},
+"size": Vector2(328.004, 372),
+"speaker": 3
+},
+"1_143": {
+"dialogue": "WHATEVER YOU SEE YOURSELF AS.",
+"offset": Vector2(38740, -1040),
+"options": {
+0: {
+"condition": {},
+"link": &"1_144",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_144": {
+"dialogue": "YOU MAY PASS THROUGH THE GATE. AND FORGE YOUR WEAPON TO BEGIN YOUR TRUE ADVENTURE.",
+"offset": Vector2(39300, -1080),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_145": {
+"dialogue": "What! How DARE you.",
+"offset": Vector2(32040, -200),
+"options": {
+0: {
+"condition": {},
+"link": &"1_146",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_146": {
+"dialogue": "Of course we know the answer!",
+"offset": Vector2(32500, -220),
+"options": {
+0: {
+"condition": {},
+"link": &"1_147",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_147": {
+"dialogue": "You sure about that? Because you literally didn't know the last one.",
+"offset": Vector2(32900, -240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_148",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_148": {
+"dialogue": "Wow. This is so rude, honestly.",
+"offset": Vector2(33340, -240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_149",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_149": {
+"dialogue": "Yeah, seriously rude. We totally know the answer.",
+"offset": Vector2(33760, -260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_150",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_15": {
+"dialogue": "To pass, you must answer me my riddle.",
+"offset": Vector2(5046.88, -257.692),
+"options": {
+0: {
+"condition": {},
+"link": &"1_16",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_150": {
+"dialogue": "Really.",
+"offset": Vector2(34180, -260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_151",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_151": {
+"dialogue": "Yes! Of course! We would be terrible Forge Guardians if we didn't!",
+"offset": Vector2(34600, -280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_152",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_152": {
+"dialogue": "And we are NOT terrible Forge Guardians.",
+"offset": Vector2(35020, -240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_153",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_153": {
+"dialogue": "Sure you're not.",
+"offset": Vector2(35460, -240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_154",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_154": {
+"dialogue": "We're not!",
+"offset": Vector2(35900, -260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_155",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_155": {
+"dialogue": "Prove it!",
+"offset": Vector2(36340, -260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_156",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_156": {
+"dialogue": "We will! The answer is A HUMAN BEING! Bam!",
+"offset": Vector2(36760, -260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_157",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_157": {
+"dialogue": "Hmm, I don't see how that could be the answer.",
+"offset": Vector2(37160, -280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_158",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_158": {
+"dialogue": "No, it totally is! Four legs in the morning, that's like a baby, crawling around...",
+"offset": Vector2(37600, -300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_159",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_159": {
+"dialogue": "Two legs in the daytime, that's when they're walking around on their own two feet!",
+"offset": Vector2(38040, -300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_160",
+"text": ""
+}
+},
+"size": Vector2(300.002, 372),
+"speaker": 2
+},
+"1_16": {
+"dialogue": "Or otherwise prove your worth.",
+"offset": Vector2(5520, -260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_17",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_160": {
+"dialogue": "And three legs in the evening is when they're old and using a cane!",
+"offset": Vector2(38480, -320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_161",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_161": {
+"dialogue": "I don't know...",
+"offset": Vector2(38960, -320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_162",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_162": {
+"dialogue": "No, see- it's like a METAPHOR. The time of day is like the lifecycle of the human.",
+"offset": Vector2(39400, -300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_163",
+"text": ""
+}
+},
+"size": Vector2(300.004, 372),
+"speaker": 2
+},
+"1_163": {
+"dialogue": "And once again... you've given me the answer. A human being.",
+"offset": Vector2(39800, -300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_164",
+"text": ""
+}
+},
+"size": Vector2(300.008, 372),
+"speaker": 0
+},
+"1_164": {
+"dialogue": "May I pass?",
+"offset": Vector2(40231.6, -329.727),
+"options": {
+0: {
+"condition": {},
+"link": &"1_165",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_165": {
+"dialogue": "...",
+"offset": Vector2(40640, -340),
+"options": {
+0: {
+"condition": {},
+"link": &"1_166",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_166": {
+"dialogue": "ARE YOU SERIOUS",
+"offset": Vector2(41080, -360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_167",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_167": {
+"dialogue": "WHAT THE HELL",
+"offset": Vector2(41540, -280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_168",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_168": {
+"dialogue": "I'd love to forge my blade and finally hit the road for my adventure.",
+"offset": Vector2(41980, -300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_169",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_169": {
+"dialogue": "CONGRATULATIONS. THE FORGE AWAITS YOU.",
+"offset": Vector2(42420, -340),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_17": {
+"dialogue": "FAIL OUR TEST AND YOU SHALL BE CAST OUT.",
+"offset": Vector2(5920, -280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_18",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_170": {
+"dialogue": "Ohhhh no you don't. ",
+"offset": Vector2(31903.9, 559.623),
+"options": {
+0: {
+"condition": {},
+"link": &"1_171",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_171": {
+"dialogue": "Yeah, the answer for every question in life isn't 42.",
+"offset": Vector2(32340, 540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_172",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_172": {
+"dialogue": "That would be ridiculous.",
+"offset": Vector2(32760, 540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_173",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_173": {
+"dialogue": "Seriously. We're being serious.",
+"offset": Vector2(33220, 520),
+"options": {
+0: {
+"condition": {},
+"link": &"1_174",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_174": {
+"dialogue": "You really think the answer for life, the universe, and everything is 42?",
+"offset": Vector2(33660, 520),
+"options": {
+0: {
+"condition": {},
+"link": &"1_175",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_175": {
+"dialogue": "Can you imagine! The ancient Forge letting a ninny like this fella in!",
+"offset": Vector2(34080, 520),
+"options": {
+0: {
+"condition": {},
+"link": &"1_176",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_176": {
+"dialogue": "...you haven't said I'm wrong yet.",
+"offset": Vector2(34540, 520),
+"options": {
+0: {
+"condition": {},
+"link": &"1_177",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_177": {
+"dialogue": "I'm not even going to dignify that with a response.",
+"offset": Vector2(34940, 500),
+"options": {
+0: {
+"condition": {},
+"link": &"1_178",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_178": {
+"dialogue": "Yeah, it doesn't even derserve one.",
+"offset": Vector2(35292, 515.98),
+"options": {
+0: {
+"condition": {},
+"link": &"1_179",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_179": {
+"dialogue": "So...",
+"offset": Vector2(35720, 500),
+"options": {
+0: {
+"condition": {},
+"link": &"1_180",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_18": {
+"dialogue": "Alright. I'll play your little games. Hit me.",
+"offset": Vector2(6300, -300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_19",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_180": {
+"dialogue": "I swear...",
+"offset": Vector2(36100, 500),
+"options": {
+0: {
+"condition": {},
+"link": &"1_181",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_181": {
+"dialogue": "Yeah. They're right. ",
+"offset": Vector2(36560, 460),
+"options": {
+0: {
+"condition": {},
+"link": &"1_182",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_182": {
+"dialogue": "I know.",
+"offset": Vector2(36920, 440),
+"options": {
+0: {
+"condition": {},
+"link": &"1_183",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_183": {
+"dialogue": "May I enter the sacred gates and claim time at the Forge?",
+"offset": Vector2(37400, 440),
+"options": {
+0: {
+"condition": {},
+"link": &"1_184",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_184": {
+"dialogue": "YOU MAY.",
+"offset": Vector2(37800, 440),
+"options": {
+0: {
+"condition": {},
+"link": &"1_185",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_185": {
+"dialogue": "ENTER. YOUR ADVENTURE AWAITS.",
+"offset": Vector2(38220, 420),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_19": {
+"dialogue": "Heh. You may just have what it takes to see our beautiful forge and begin your true adventure.",
+"offset": Vector2(6720, -340),
+"options": {
+0: {
+"condition": {},
+"link": &"1_20",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
 "1_2": {
-"dialogue": "KIHIHIHHIIHHIHIHIHIHIHI",
+"dialogue": "...",
 "offset": Vector2(600, -220),
 "options": {
 0: {
 "condition": {},
-"link": &"3_4",
+"link": &"1_3",
+"text": "Kind of, yeah."
+},
+1: {
+"condition": {},
+"link": &"1_3",
+"text": "What, are you going to stop me? "
+},
+2: {
+"condition": {},
+"link": &"1_3",
+"text": "Watch me!"
+}
+},
+"size": Vector2(328, 555),
+"speaker": 0
+},
+"1_20": {
+"dialogue": "Imagine: there is a door before you. And the road behind. ",
+"offset": Vector2(7200, -340),
+"options": {
+0: {
+"condition": {},
+"link": &"1_21",
 "text": ""
 }
 },
-"size": Vector2(300.001, 433),
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_21": {
+"dialogue": "Through the door, riches beyond your wildest dreams.",
+"offset": Vector2(7680, -360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_22",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_22": {
+"dialogue": "The road behind will lead you back home. IN SHAME.",
+"offset": Vector2(8120, -360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_23",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_23": {
+"dialogue": "To enter the door, you must determine the identity of two hooded figures. One is a cat, the other a mouse.",
+"offset": Vector2(8600, -420),
+"options": {
+0: {
+"condition": {},
+"link": &"1_24",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_24": {
+"dialogue": "One figure always tells the truth, and one always lies.",
+"offset": Vector2(9060, -440),
+"options": {
+0: {
+"condition": {},
+"link": &"1_25",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_25": {
+"dialogue": "You must figure out which is which. But you can only ask one question of the figures. What do you ask?",
+"offset": Vector2(9500, -480),
+"options": {
+0: {
+"condition": {},
+"link": &"1_26",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_26": {
+"dialogue": "...",
+"offset": Vector2(10000, -460),
+"options": {
+0: {
+"condition": {},
+"link": &"1_27",
+"text": "I see. Does this count as my question?"
+},
+1: {
+"condition": {},
+"link": &"1_40",
+"text": "What about... 42?"
+},
+2: {
+"condition": {},
+"link": &"1_52",
+"text": "I would ask the figure on the left \"would the figure on the right lie to me about being a mouse?\""
+}
+},
+"size": Vector2(300, 555),
+"speaker": 0
+},
+"1_27": {
+"dialogue": "What? No, of course not.",
+"offset": Vector2(10540, -740),
+"options": {
+0: {
+"condition": {},
+"link": &"1_28",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_28": {
+"dialogue": "So I CAN ask more than one question?",
+"offset": Vector2(10960, -780),
+"options": {
+0: {
+"condition": {},
+"link": &"1_29",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_29": {
+"dialogue": "No, just one!",
+"offset": Vector2(11380, -820),
+"options": {
+0: {
+"condition": {},
+"link": &"1_30",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
 "speaker": 2
 },
 "1_3": {
-"dialogue": "UAAAAAAH WHY ARE YOU HEEEREEE ?!",
-"offset": Vector2(1180, -240),
+"dialogue": "You absolute fool. You have to get through us first!",
+"offset": Vector2(1300, -280),
 "options": {
 0: {
 "condition": {},
@@ -51,61 +1468,1033 @@ nodes = {
 }
 },
 "size": Vector2(300, 433),
-"speaker": 4
+"speaker": 1
+},
+"1_30": {
+"dialogue": "What would call this conversation, then?",
+"offset": Vector2(11780, -820),
+"options": {
+0: {
+"condition": {},
+"link": &"1_31",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_31": {
+"dialogue": "Hold on.That's not what this is about.",
+"offset": Vector2(12200, -820),
+"options": {
+0: {
+"condition": {},
+"link": &"1_32",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_32": {
+"dialogue": "So what is it about?",
+"offset": Vector2(12600, -860),
+"options": {
+0: {
+"condition": {},
+"link": &"1_33",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_33": {
+"dialogue": "You're asking the wrong questions!",
+"offset": Vector2(13000, -860),
+"options": {
+0: {
+"condition": {},
+"link": &"1_34",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_34": {
+"dialogue": "What would be the right question?",
+"offset": Vector2(13420, -880),
+"options": {
+0: {
+"condition": {},
+"link": &"1_35",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_35": {
+"dialogue": "You're SUPPOSED to ask if one of them would lie about the other one being a mouse!",
+"offset": Vector2(13880, -920),
+"options": {
+0: {
+"condition": {},
+"link": &"1_36",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_36": {
+"dialogue": "Yeah! And then based on their answer, you can determine the other one!",
+"offset": Vector2(14320, -900),
+"options": {
+0: {
+"condition": {},
+"link": &"1_37",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_37": {
+"dialogue": "Sounds good. I'll do that.",
+"offset": Vector2(14740, -960),
+"options": {
+0: {
+"condition": {},
+"link": &"1_38",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_38": {
+"dialogue": "...",
+"offset": Vector2(15180, -980),
+"options": {
+0: {
+"condition": {},
+"link": &"1_39",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_39": {
+"dialogue": "TREACHARY.",
+"offset": Vector2(15619, -1064.9),
+"options": {
+0: {
+"condition": {},
+"link": &"1_63",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
 },
 "1_4": {
-"dialogue": "[wait speed=4]Also...[/wait][wait time=2] you can mess around with the wait speed and time and the sound plays accordingly![/wait]",
+"dialogue": "Guess no one told you that The Forge is guarded by the fiercest knights in the land...",
 "offset": Vector2(1660, -260),
 "options": {
 0: {
 "condition": {},
-"link": "END",
+"link": &"1_6",
 "text": ""
 }
 },
-"size": Vector2(300.002, 433),
+"size": Vector2(328, 433),
 "speaker": 2
 },
-"1_5": {
-"dialogue": "Welcome to chessboard !",
-"offset": Vector2(-660, -160),
+"1_40": {
+"dialogue": "Oh ho ho, you foolish little fellow. That's a number! What could that possibly have to do with-",
+"offset": Vector2(10540, -160),
 "options": {
 0: {
 "condition": {},
-"link": &"3_2",
+"link": &"1_41",
 "text": ""
 }
 },
-"size": Vector2(300, 274),
-"speaker": ""
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_41": {
+"dialogue": "Wait, wait... they're right.",
+"offset": Vector2(10960, -180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_42",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_42": {
+"dialogue": "Is this a jest? Are you jesting me right now?",
+"offset": Vector2(11420, -180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_43",
+"text": ""
+}
+},
+"size": Vector2(300.001, 372),
+"speaker": 1
+},
+"1_43": {
+"dialogue": "I don't know what to tell you. Says right here they're not wrong.",
+"offset": Vector2(11880, -180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_44",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_44": {
+"dialogue": "But this is a WORD GAME. A LOGIC PUZZLE. ",
+"offset": Vector2(12380, -200),
+"options": {
+0: {
+"condition": {},
+"link": &"1_45",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_45": {
+"dialogue": "I'm just going by what it says in the rulebook.",
+"offset": Vector2(12860, -200),
+"options": {
+0: {
+"condition": {},
+"link": &"1_46",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_46": {
+"dialogue": "Let me see that IMMEOWDIATELY.",
+"offset": Vector2(13320, -220),
+"options": {
+0: {
+"condition": {},
+"link": &"1_47",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_47": {
+"dialogue": "Knock thyself out.",
+"offset": Vector2(13800, -240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_48",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_48": {
+"dialogue": "...well would you look at that.",
+"offset": Vector2(14280, -220),
+"options": {
+0: {
+"condition": {},
+"link": &"1_49",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_49": {
+"dialogue": "Did I get it right?",
+"offset": Vector2(14700, -220),
+"options": {
+0: {
+"condition": {},
+"link": &"1_50",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_5": {
+"dialogue": "Ho there, traveler! Think you can just walk in through these venerable gates? ",
+"offset": Vector2(-340, -220),
+"options": {
+0: {
+"condition": {},
+"link": &"1_1",
+"text": ""
+}
+},
+"size": Vector2(300, 430.999),
+"speaker": 1
+},
+"1_50": {
+"dialogue": "NOT SO FAST. ",
+"offset": Vector2(15160, -260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_51",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_51": {
+"dialogue": "YOU EXPLOITED A LOOPHOLE. IT'S AGAINST THE SPIRIT OF THE RIDDLE.",
+"offset": Vector2(15640, -260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_63",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_52": {
+"dialogue": "Psh! And what would that accomplish?",
+"offset": Vector2(10540, 360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_53",
+"text": ""
+}
+},
+"size": Vector2(300, 372.001),
+"speaker": 1
+},
+"1_53": {
+"dialogue": "Yeah! You think you can just guess that and call it a day?",
+"offset": Vector2(10980, 380),
+"options": {
+0: {
+"condition": {},
+"link": &"1_54",
+"text": ""
+}
+},
+"size": Vector2(300, 372.001),
+"speaker": 2
+},
+"1_54": {
+"dialogue": "Well, you can, but you would be WRONG. Sorry, chap.",
+"offset": Vector2(11420, 360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_55",
+"text": ""
+}
+},
+"size": Vector2(300.001, 372.001),
+"speaker": 1
+},
+"1_55": {
+"dialogue": "Wait, are they wrong though?",
+"offset": Vector2(11880, 340),
+"options": {
+0: {
+"condition": {},
+"link": &"1_56",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_56": {
+"dialogue": "...aren't they?",
+"offset": Vector2(12380, 340),
+"options": {
+0: {
+"condition": {},
+"link": &"1_57",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_57": {
+"dialogue": "I thought you had the answers all written down.",
+"offset": Vector2(12860, 360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_58",
+"text": ""
+}
+},
+"size": Vector2(300, 372.001),
+"speaker": 2
+},
+"1_58": {
+"dialogue": "Where would I put them? I don't have any pockets!",
+"offset": Vector2(13340, 360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_59",
+"text": ""
+}
+},
+"size": Vector2(300, 372.001),
+"speaker": 1
+},
+"1_59": {
+"dialogue": "Seems to me like this isn't a very professional operation here.",
+"offset": Vector2(13800, 340),
+"options": {
+0: {
+"condition": {},
+"link": &"1_60",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_6": {
+"dialogue": "THE LONG PAW OF THE LAW.",
+"offset": Vector2(2020, -300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_7",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_60": {
+"dialogue": "HOW DARE YOU. WE WILL NOT BE MALIGNED.",
+"offset": Vector2(14300, 320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_61",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_61": {
+"dialogue": "WE HAVE GUARDED ENTRANCE TO THE FORGE FOR GENERATIONS.",
+"offset": Vector2(14820, 320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_62",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_62": {
+"dialogue": "I'm simply saying that you could have thought about this a bit harder.",
+"offset": Vector2(15280, 300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_63",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_63": {
+"dialogue": "I guess... hm. Another riddle is in order. It's the only way to be sure.",
+"offset": Vector2(16400, -280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_64",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_64": {
+"dialogue": "Yeah! Another riddle! ",
+"offset": Vector2(16900, -260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_65",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_65": {
+"dialogue": "I got it. Hold onto your hat, pussycat.",
+"offset": Vector2(17360, -320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_66",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_66": {
+"dialogue": "As I was going to the Forge, I met a man with seven wives.",
+"offset": Vector2(17765.4, -403.351),
+"options": {
+0: {
+"condition": {},
+"link": &"1_67",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_67": {
+"dialogue": "Each wife had seven sacks, and each sack had seven cats.",
+"offset": Vector2(18240, -440),
+"options": {
+0: {
+"condition": {},
+"link": &"1_68",
+"text": ""
+}
+},
+"size": Vector2(300.004, 372),
+"speaker": 1
+},
+"1_68": {
+"dialogue": "Whoa! That's a lotta cats!",
+"offset": Vector2(18720, -420),
+"options": {
+0: {
+"condition": {},
+"link": &"1_69",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_69": {
+"dialogue": "Each cat had seven kittens. Kittens, cats, sacks and wives-",
+"offset": Vector2(19200, -440),
+"options": {
+0: {
+"condition": {},
+"link": &"1_70",
+"text": ""
+}
+},
+"size": Vector2(300.001, 372),
+"speaker": 1
+},
+"1_7": {
+"dialogue": "Alright, fine. What dost thou want from me?",
+"offset": Vector2(2354.19, -155.887),
+"options": {
+0: {
+"condition": {},
+"link": &"1_8",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_70": {
+"dialogue": "How many were going to the Forge?",
+"offset": Vector2(19680, -460),
+"options": {
+0: {
+"condition": {},
+"link": &"1_71",
+"text": ""
+}
+},
+"size": Vector2(300.001, 372),
+"speaker": 1
+},
+"1_71": {
+"dialogue": "...",
+"offset": Vector2(20160, -480),
+"options": {
+0: {
+"condition": {},
+"link": &"1_72",
+"text": "Can I use my calulator?"
+},
+1: {
+"condition": {},
+"link": &"1_89",
+"text": "Just one."
+},
+2: {
+"condition": {},
+"link": &"1_104",
+"text": "Could it be... 42?"
+}
+},
+"size": Vector2(300.002, 555),
+"speaker": 0
+},
+"1_72": {
+"dialogue": "No way! This is one of those you gotta work out in your head.",
+"offset": Vector2(20620, -1040),
+"options": {
+0: {
+"condition": {},
+"link": &"1_73",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_73": {
+"dialogue": "And I forgot to say! You only get 30 seconds to answer.",
+"offset": Vector2(21020, -1080),
+"options": {
+0: {
+"condition": {},
+"link": &"1_74",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_74": {
+"dialogue": "That's right, and then we'll send you packing.",
+"offset": Vector2(21420, -1080),
+"options": {
+0: {
+"condition": {},
+"link": &"1_75",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_75": {
+"dialogue": "Hm. Let's see... multiply by seven... times it by three...",
+"offset": Vector2(21820, -1120),
+"options": {
+0: {
+"condition": {},
+"link": &"1_76",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_76": {
+"dialogue": "Get the square root... walk around the block...",
+"offset": Vector2(22240, -1100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_77",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_77": {
+"dialogue": "Up, down, and all around...",
+"offset": Vector2(22620, -1180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_78",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_78": {
+"dialogue": "Well? Times almost up!",
+"offset": Vector2(23000, -1200),
+"options": {
+0: {
+"condition": {},
+"link": &"1_79",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_79": {
+"dialogue": "What's your answer?",
+"offset": Vector2(23400, -1200),
+"options": {
+0: {
+"condition": {},
+"link": &"1_80",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_8": {
+"dialogue": "Only the pure of heart can pass through.",
+"offset": Vector2(2740, -180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_9",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_80": {
+"dialogue": "There's no way they've got it.",
+"offset": Vector2(23760, -1220),
+"options": {
+0: {
+"condition": {},
+"link": &"1_81",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_81": {
+"dialogue": "Yeah! No way they'll guess the answer is one!",
+"offset": Vector2(24111.6, -1234.04),
+"options": {
+0: {
+"condition": {},
+"link": &"1_82",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_82": {
+"dialogue": "...did you just GIVE IT AWAY?",
+"offset": Vector2(24520, -1260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_83",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_83": {
+"dialogue": "Ah, nuts. ",
+"offset": Vector2(24940, -1280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_84",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_84": {
+"dialogue": "IT'S ONE I'M STILL UNDER THE TIME LIMIT SO IT COUNTS",
+"offset": Vector2(25360, -1320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_85",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_85": {
+"dialogue": "THAT IS A TECHNICALITY.",
+"offset": Vector2(25744.9, -1353.83),
+"options": {
+0: {
+"condition": {},
+"link": &"1_86",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_86": {
+"dialogue": "Is there anything about not getting in on a technicality?",
+"offset": Vector2(26200, -1360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_87",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_87": {
+"dialogue": "...",
+"offset": Vector2(26547.1, -1409.78),
+"options": {
+0: {
+"condition": {},
+"link": &"1_88",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_88": {
+"dialogue": "RATS",
+"offset": Vector2(27000, -1420),
+"options": {
+0: {
+"condition": {},
+"link": &"1_117",
+"text": ""
+}
+},
+"size": Vector2(328, 372),
+"speaker": 3
+},
+"1_89": {
+"dialogue": "Bing bong, you're wrong!",
+"offset": Vector2(20800, -220),
+"options": {
+0: {
+"condition": {},
+"link": &"1_90",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_9": {
+"dialogue": "The sharp of mind.",
+"offset": Vector2(3160, -180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_10",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_90": {
+"dialogue": "You colossal dingbat! You unbelievable oaf!",
+"offset": Vector2(21240, -260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_91",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_91": {
+"dialogue": "I can't believe you got it wrong. And so confidently!",
+"offset": Vector2(21640, -280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_92",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_92": {
+"dialogue": "Yeah! The answer is 2,401! OBVIOUSLY!",
+"offset": Vector2(22020, -320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_93",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_93": {
+"dialogue": "So simple. Anyone could do it. Guess you'll never see the Forge.",
+"offset": Vector2(22480, -300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_94",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_94": {
+"dialogue": "Heh. Are you...sure about that?",
+"offset": Vector2(22880, -300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_95",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_95": {
+"dialogue": "What do you mean?",
+"offset": Vector2(23300, -320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_96",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_96": {
+"dialogue": "Yeah, what do you mean?",
+"offset": Vector2(23700, -340),
+"options": {
+0: {
+"condition": {},
+"link": &"1_97",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 2
+},
+"1_97": {
+"dialogue": "The riddle asks who is going TO the Forge...",
+"offset": Vector2(24140, -320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_98",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
+},
+"1_98": {
+"dialogue": "Right...",
+"offset": Vector2(24560, -380),
+"options": {
+0: {
+"condition": {},
+"link": &"1_99",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 1
+},
+"1_99": {
+"dialogue": "And all those wives, sacks, cats and kittens were clearly walking AWAY from the Forge.",
+"offset": Vector2(25020, -360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_100",
+"text": ""
+}
+},
+"size": Vector2(300, 372),
+"speaker": 0
 },
 "3_1": {
-"link": &"1_5",
-"offset": Vector2(-920, -180),
-"signalValue": "background_placeholder"
+"link": &"3_5",
+"offset": Vector2(-1120, -100),
+"signalValue": "background_bgprototype"
 },
 "3_2": {
-"link": &"1_1",
-"offset": Vector2(-280, -140),
+"link": "END",
+"offset": Vector2(-620, 120),
 "signalValue": "character_enter,battler,left,smile"
 },
 "3_3": {
-"link": &"3_5",
-"offset": Vector2(300, -180),
+"link": "END",
+"offset": Vector2(0, -200),
 "signalValue": "character_enter,beato,right,laugh"
 },
 "3_4": {
-"link": &"1_3",
-"offset": Vector2(940, -300),
+"link": "END",
+"offset": Vector2(980, -460),
 "signalValue": "character_expression,battler,cry"
 },
 "3_5": {
-"link": &"1_2",
-"offset": Vector2(300, -260),
-"signalValue": "music_badparty"
+"link": &"1_5",
+"offset": Vector2(-860, -40),
+"signalValue": "music_magicliploop"
 }
 }
 variables = {}
 comments = Array[String]([])
-strays = Array[String]([])
+strays = Array[String](["3_2", "3_3", "3_4"])
 characters = "res://Characters.tres"
