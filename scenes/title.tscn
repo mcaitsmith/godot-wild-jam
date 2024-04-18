@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scenes/TitleScreen.gd" id="1_3d7ge"]
 [ext_resource type="Script" path="res://scenes/Background.gd" id="2_1klbb"]
-[ext_resource type="Texture2D" uid="uid://b06agjjmao4qx" path="res://assets/backgrounds/placeholder.png" id="2_bybyx"]
-[ext_resource type="Texture2D" uid="uid://b1hkn1x7yw4ip" path="res://assets/sprites/battler cry.png" id="4_6dpw1"]
+[ext_resource type="Texture2D" uid="uid://doqhitswxt6w1" path="res://assets/backgrounds/placeholder.png" id="2_bybyx"]
+[ext_resource type="Texture2D" uid="uid://y8tp3yrsf5o5" path="res://assets/sprites/battler cry.png" id="4_6dpw1"]
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
