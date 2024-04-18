@@ -10,7 +10,7 @@
 [ext_resource type="Resource" uid="uid://b6yryad4n8aml" path="res://Dialogue.tres" id="8_x3kkh"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="9_mts60"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="10_38cj8"]
-[ext_resource type="AudioStream" uid="uid://b7h8jm0qif87y" path="res://voice.ogg" id="11_bc6m6"]
+[ext_resource type="AudioStream" uid="uid://corjhs6hvlrlv" path="res://voice.ogg" id="11_bc6m6"]
 [ext_resource type="Script" path="res://src/pause_menu.gd" id="12_567ym"]
 [ext_resource type="Script" path="res://src/options_menu.gd" id="13_35yki"]
 
