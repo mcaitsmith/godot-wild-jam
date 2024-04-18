@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://0nw8rodjntl3"]
 
 [ext_resource type="Script" path="res://src/character.gd" id="1_w3ba8"]
-[ext_resource type="Texture2D" uid="uid://dk3hl6ij20kfw" path="res://assets/sprites/beato gasp.png" id="2_srf2t"]
+[ext_resource type="Texture2D" uid="uid://dltogd80ltet0" path="res://assets/sprites/beato gasp.png" id="2_srf2t"]
 
 [node name="character" type="Control"]
 layout_mode = 3
