@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="2_435yb"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="3_xlyqn"]
 [ext_resource type="Resource" uid="uid://c4ay241u6mexj" path="res://examples/ExampleAudio.tres" id="4_1tepv"]
-[ext_resource type="AudioStream" uid="uid://bin1ei6yesmjv" path="res://examples/voice.ogg" id="7_au5ch"]
+[ext_resource type="AudioStream" uid="uid://b4dx0vdn0u3rt" path="res://examples/voice.ogg" id="7_au5ch"]
 
 [sub_resource type="RichTextEffect" id="RichTextEffect_glys4"]
 script = ExtResource("2_435yb")

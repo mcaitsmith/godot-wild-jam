@@ -1,24 +1,27 @@
 [gd_resource type="Resource" script_class="CharacterList" load_steps=9 format=3 uid="uid://c50uigpcdh6uc"]
 
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/Character.gd" id="1_bvwjf"]
-[ext_resource type="Texture2D" uid="uid://dsl4s8w5nwbam" path="res://examples/profile0.png" id="2_s4d3m"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/CharacterList.gd" id="3_1l3vp"]
 
 [sub_resource type="Resource" id="1"]
 script = ExtResource("1_bvwjf")
-name = "Greg"
-color = Color(0, 0.964706, 0.647059, 1)
+name = "Player"
+color = Color(0.5, 0.5, 1, 1)
 
 [sub_resource type="Resource" id="2"]
 script = ExtResource("1_bvwjf")
-name = "Clara"
-image = ExtResource("2_s4d3m")
-color = Color(1, 0.501961, 0.784314, 1)
+name = "Guard 1"
+color = Color(1, 0.5, 0, 1)
+
+[sub_resource type="Resource" id="3"]
+script = ExtResource("1_bvwjf")
+name = "Guard 2"
+color = Color(1, 0.5, 0.5, 1)
 
 [sub_resource type="Resource" id="Resource_bfsux"]
 script = ExtResource("1_bvwjf")
-name = "Beato"
-color = Color(0.972549, 0.729412, 0, 1)
+name = "Guards 1 & 2"
+color = Color(0, 1, 0, 1)
 
 [sub_resource type="Resource" id="Resource_vae2b"]
 script = ExtResource("1_bvwjf")
@@ -32,4 +35,4 @@ color = Color(0.752941, 0, 0.211765, 1)
 
 [resource]
 script = ExtResource("3_1l3vp")
-characters = Array[ExtResource("1_bvwjf")]([SubResource("1"), SubResource("2"), SubResource("Resource_bfsux"), SubResource("Resource_vae2b"), SubResource("Resource_64bqj")])
+characters = Array[ExtResource("1_bvwjf")]([SubResource("1"), SubResource("2"), SubResource("3"), SubResource("Resource_bfsux"), SubResource("Resource_vae2b"), SubResource("Resource_64bqj")])
