@@ -7,3 +7,5 @@
 *.import
 
 *.tmp
+
+*.dll
