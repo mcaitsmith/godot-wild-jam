@@ -4,8 +4,6 @@
 # VS Code specific ignores
 .vscode/
 
-*.import
-
 *.tmp
 
 *.dll
