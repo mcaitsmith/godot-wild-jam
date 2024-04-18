@@ -10,7 +10,7 @@
 [ext_resource type="Resource" uid="uid://cbu4k4hs8fk5s" path="res://examples/ExampleVariables.tres" id="8_872se"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/dialogueBox.gd" id="8_kplwy"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="9_4rd6n"]
-[ext_resource type="Resource" uid="uid://dp3enlibqhftj" path="res://myDialogue.tres" id="9_qyrwr"]
+[ext_resource type="Resource" uid="uid://b6yryad4n8aml" path="res://Dialogue.tres" id="9_qyrwr"]
 
 [sub_resource type="Curve" id="1"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -1.67805, 0.0, 0, 0]

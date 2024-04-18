@@ -9,40 +9,40 @@ starts = {
 }
 nodes = {
 "0_1": {
-"link": &"1_1",
-"offset": Vector2(0, 0),
+"link": &"3_1",
+"offset": Vector2(-1140, -60),
 "start_id": "START"
 },
 "1_1": {
-"dialogue": "Oh hey!",
-"offset": Vector2(220, 0),
+"dialogue": "Yoooo baaaatora why are you going before me!
+",
+"offset": Vector2(-20, -300),
 "options": {
 0: {
 "condition": {},
-"link": &"1_2",
+"link": &"3_3",
 "text": ""
 }
 },
-"size": Vector2(300, 433),
-"speaker": 1
+"size": Vector2(300, 514.818),
+"speaker": 2
 },
 "1_2": {
-"dialogue": "This is an example of setting up audio to play when a dialogue is playing.",
-"offset": Vector2(560, 0),
+"dialogue": "KIHIHIHHIIHHIHIHIHIHIHI",
+"offset": Vector2(600, -220),
 "options": {
 0: {
 "condition": {},
-"link": &"1_3",
+"link": &"3_4",
 "text": ""
 }
 },
-"size": Vector2(300, 433),
-"speaker": 1
+"size": Vector2(300.001, 433),
+"speaker": 2
 },
 "1_3": {
-"dialogue": "[wait]Funny thing is, you don't have to do anything in the dialogue editor.[/wait]
-[wait time=1]Its just the signal connected in the scene's script[/wait]",
-"offset": Vector2(900, 0),
+"dialogue": "UAAAAAAH WHY ARE YOU HEEEREEE ?!",
+"offset": Vector2(1180, -240),
 "options": {
 0: {
 "condition": {},
@@ -51,11 +51,11 @@ nodes = {
 }
 },
 "size": Vector2(300, 433),
-"speaker": 1
+"speaker": 4
 },
 "1_4": {
 "dialogue": "[wait speed=4]Also...[/wait][wait time=2] you can mess around with the wait speed and time and the sound plays accordingly![/wait]",
-"offset": Vector2(1240, 0),
+"offset": Vector2(1660, -260),
 "options": {
 0: {
 "condition": {},
@@ -63,8 +63,46 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 433),
-"speaker": 1
+"size": Vector2(300.002, 433),
+"speaker": 2
+},
+"1_5": {
+"dialogue": "Welcome to chessboard !",
+"offset": Vector2(-660, -160),
+"options": {
+0: {
+"condition": {},
+"link": &"3_2",
+"text": ""
+}
+},
+"size": Vector2(300, 274),
+"speaker": ""
+},
+"3_1": {
+"link": &"1_5",
+"offset": Vector2(-920, -180),
+"signalValue": "background_placeholder"
+},
+"3_2": {
+"link": &"1_1",
+"offset": Vector2(-280, -140),
+"signalValue": "character_enter,battler,left,smile"
+},
+"3_3": {
+"link": &"3_5",
+"offset": Vector2(300, -180),
+"signalValue": "character_enter,beato,right,laugh"
+},
+"3_4": {
+"link": &"1_3",
+"offset": Vector2(940, -300),
+"signalValue": "character_expression,battler,cry"
+},
+"3_5": {
+"link": &"1_2",
+"offset": Vector2(300, -260),
+"signalValue": "music_badparty"
 }
 }
 variables = {}
