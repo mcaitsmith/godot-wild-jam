@@ -2,7 +2,7 @@ extends Control
 class_name Chara
 var character_name
 
-func move(location,smooth = true,duration = 0.5):
+func getPosition(location):
 	var position_vector
 	match location.to_lower():
 		"center":
@@ -13,6 +13,13 @@ func move(location,smooth = true,duration = 0.5):
 			position_vector = Global.left
 		_:
 			pass
+	return position_vector
+func setPosition(location):
+	var position_vector = getPosition(location)
+	self.position = position_vector
+	pass
+func move(location,smooth = true,duration = 0.5):
+	var position_vector = getPosition(location)
 	var tween = get_tree().create_tween()
 	tween.tween_property(self,"position",position_vector,duration).set_ease(Tween.EASE_IN_OUT)
 	await get_tree().create_timer(duration).timeout

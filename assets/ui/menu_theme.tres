@@ -1,0 +1,23 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://dy4iynna5afl2"]
+
+[ext_resource type="StyleBox" uid="uid://b23bfbl76xq6a" path="res://assets/ui/button_texture.tres" id="1_cgd5c"]
+[ext_resource type="Texture2D" uid="uid://cl3anccd453o6" path="res://assets/ui/dialogue.png" id="1_w6877"]
+[ext_resource type="FontFile" uid="uid://bwysl8y53ssvj" path="res://assets/ui/NanumPenScript-Regular.ttf" id="2_ss00n"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j2t88"]
+texture = ExtResource("1_w6877")
+expand_margin_left = 30.0
+expand_margin_top = 30.0
+expand_margin_right = 30.0
+
+[resource]
+Button/colors/font_color = Color(0.266667, 0.266667, 0.266667, 1)
+Button/styles/disabled = null
+Button/styles/focus = ExtResource("1_cgd5c")
+Button/styles/hover = ExtResource("1_cgd5c")
+Button/styles/normal = ExtResource("1_cgd5c")
+Button/styles/pressed = ExtResource("1_cgd5c")
+Label/colors/font_color = Color(0.266667, 0.266667, 0.266667, 1)
+Label/font_sizes/font_size = 52
+Label/fonts/font = ExtResource("2_ss00n")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_j2t88")

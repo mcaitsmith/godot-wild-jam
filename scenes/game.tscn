@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dt3mmms37svf5"]
+[gd_scene load_steps=18 format=3 uid="uid://dt3mmms37svf5"]
 
 [ext_resource type="Script" path="res://src/audio_manager.gd" id="1_6f756"]
 [ext_resource type="Script" path="res://src/character_manager.gd" id="1_dqalt"]
@@ -8,10 +8,12 @@
 [ext_resource type="Script" path="res://Main.gd" id="6_p3mg2"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/dialogueBox.gd" id="7_1ws2c"]
 [ext_resource type="Resource" uid="uid://b6yryad4n8aml" path="res://Dialogue.tres" id="8_x3kkh"]
+[ext_resource type="Texture2D" uid="uid://nj1foaorshi5" path="res://assets/ui/paw2.png" id="9_e8mjy"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="9_mts60"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="10_38cj8"]
 [ext_resource type="AudioStream" uid="uid://baarel43reepg" path="res://meow-mixkit-93.ogg" id="11_p2pri"]
 [ext_resource type="Script" path="res://src/pause_menu.gd" id="12_567ym"]
+[ext_resource type="Theme" uid="uid://dy4iynna5afl2" path="res://assets/ui/menu_theme.tres" id="13_2lao8"]
 [ext_resource type="Script" path="res://src/options_menu.gd" id="13_35yki"]
 
 [sub_resource type="RichTextEffect" id="RichTextEffect_glys4"]
@@ -19,9 +21,6 @@ script = ExtResource("9_mts60")
 
 [sub_resource type="RichTextEffect" id="RichTextEffect_828v6"]
 script = ExtResource("10_38cj8")
-
-[sub_resource type="Theme" id="Theme_1icsq"]
-Label/font_sizes/font_size = 32
 
 [node name="game" type="Node2D"]
 
@@ -121,6 +120,7 @@ start_id = "START"
 options_alignment = 1
 options_vertical = true
 options_position = 2
+next_icon = ExtResource("9_e8mjy")
 custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_glys4"), SubResource("RichTextEffect_828v6")])
 
 [node name="Button" type="Button" parent="canvas/dialogue"]
@@ -150,6 +150,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(961, 541)
+theme = ExtResource("13_2lao8")
 script = ExtResource("12_567ym")
 
 [node name="PanelContainer" type="PanelContainer" parent="canvas/pause_menu"]
@@ -159,13 +160,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -250.0
-offset_top = -150.0
-offset_right = 250.0
-offset_bottom = 150.0
+offset_left = -400.0
+offset_top = -250.0
+offset_right = 400.0
+offset_bottom = 250.0
 grow_horizontal = 2
 grow_vertical = 2
-pivot_offset = Vector2(250, 150)
+pivot_offset = Vector2(400, 250)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="canvas/pause_menu/PanelContainer"]
 layout_mode = 2
@@ -180,6 +181,7 @@ size_flags_stretch_ratio = 0.5
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.95
+theme_override_constants/separation = 20
 alignment = 1
 
 [node name="continue" type="Button" parent="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer"]
@@ -190,6 +192,11 @@ text = "CONTINUE
 [node name="options" type="Button" parent="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "OPTIONS"
+
+[node name="main_menu" type="Button" parent="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "MAIN MENU
+"
 
 [node name="quit" type="Button" parent="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -215,7 +222,7 @@ offset_bottom = 250.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(400, 250)
-theme = SubResource("Theme_1icsq")
+theme = ExtResource("13_2lao8")
 script = ExtResource("13_35yki")
 
 [node name="PanelContainer" type="PanelContainer" parent="canvas/options_menu"]
@@ -278,6 +285,7 @@ text = "X"
 [connection signal="pressed" from="canvas/dialogue/Button" to="canvas/dialogue" method="_on_button_pressed"]
 [connection signal="pressed" from="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer/continue" to="canvas/pause_menu" method="_on_continue_pressed"]
 [connection signal="pressed" from="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer/options" to="canvas/options_menu" method="_on_options_pressed"]
+[connection signal="pressed" from="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer/main_menu" to="canvas/pause_menu" method="_on_main_menu_pressed"]
 [connection signal="pressed" from="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer/quit" to="canvas/pause_menu" method="_on_quit_pressed"]
 [connection signal="options_closed" from="canvas/options_menu" to="canvas/pause_menu" method="_on_options_menu_options_closed"]
 [connection signal="options_open" from="canvas/options_menu" to="canvas/pause_menu" method="_on_options_menu_options_open"]

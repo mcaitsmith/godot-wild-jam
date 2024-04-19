@@ -21,7 +21,7 @@ func create_character(character_name) -> Chara:
 func enter(character_name,location,sprite_name = "default",smooth = true):
 	var chara = get_character(character_name)
 	var sprite = ResourceLoader.load("res://assets/sprites/"+character_name.to_lower()+" "+sprite_name+".png")
-	chara.move(location)
+	chara.setPosition(location)
 	if smooth:
 		var tween = get_tree().create_tween()
 		chara.modulate.a = 0

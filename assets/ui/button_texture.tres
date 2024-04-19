@@ -1,0 +1,13 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://b23bfbl76xq6a"]
+
+[ext_resource type="Texture2D" uid="uid://ch286e8ghmenu" path="res://assets/ui/button2.png" id="1_nscqs"]
+
+[resource]
+texture = ExtResource("1_nscqs")
+texture_margin_left = 50.0
+texture_margin_right = 50.0
+expand_margin_left = 50.0
+expand_margin_top = 15.0
+expand_margin_right = 50.0
+expand_margin_bottom = 13.0
+modulate_color = Color(0.882353, 0.882353, 0.882353, 1)
