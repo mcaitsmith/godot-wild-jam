@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjmxckusraa1c"
-path="res://.godot/imported/battler smile.png-c35e3d574b02feab25d1c25aad0fbdcc.ctex"
+uid="uid://cl3anccd453o6"
+path="res://.godot/imported/dialogue.png-45b4b87dacaf60e4ef66f1da035d8ba5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/battler smile.png"
-dest_files=["res://.godot/imported/battler smile.png-c35e3d574b02feab25d1c25aad0fbdcc.ctex"]
+source_file="res://assets/ui/dialogue.png"
+dest_files=["res://.godot/imported/dialogue.png-45b4b87dacaf60e4ef66f1da035d8ba5.ctex"]
 
 [params]
 

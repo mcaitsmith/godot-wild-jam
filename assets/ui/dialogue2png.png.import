@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://y8tp3yrsf5o5"
-path="res://.godot/imported/battler cry.png-fd7ec1bc8332351d582ce4d521dde29e.ctex"
+uid="uid://dhf2lw4lnlifv"
+path="res://.godot/imported/dialogue2png.png-16802e453a0e4cd3379357392468a858.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/battler cry.png"
-dest_files=["res://.godot/imported/battler cry.png-fd7ec1bc8332351d582ce4d521dde29e.ctex"]
+source_file="res://assets/ui/dialogue2png.png"
+dest_files=["res://.godot/imported/dialogue2png.png-16802e453a0e4cd3379357392468a858.ctex"]
 
 [params]
 

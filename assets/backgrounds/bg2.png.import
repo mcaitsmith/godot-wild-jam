@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fvwaochfqlew"
-path="res://.godot/imported/beato gasp.png-5ff137a14305dbf629885b9e8d8b55ff.ctex"
+uid="uid://dd2tfhmopl46i"
+path="res://.godot/imported/bg2.png-c2f8a7b4ea0d28b06ac75809e73c9f2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/beato gasp.png"
-dest_files=["res://.godot/imported/beato gasp.png-5ff137a14305dbf629885b9e8d8b55ff.ctex"]
+source_file="res://assets/backgrounds/bg2.png"
+dest_files=["res://.godot/imported/bg2.png-c2f8a7b4ea0d28b06ac75809e73c9f2d.ctex"]
 
 [params]
 
