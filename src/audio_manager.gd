@@ -5,6 +5,7 @@ var audioStreamPlayers = []
 @export var count = 1
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Global.music_volume = -20
 	Signalbus.music.connect(_on_music)
 	Signalbus.stopmusic.connect(_on_stop_music)
 	if get_child_count() == 0:
