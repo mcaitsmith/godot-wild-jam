@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://bmctjgvthy81d"]
+[gd_scene load_steps=8 format=3 uid="uid://bmctjgvthy81d"]
 
 [ext_resource type="Script" path="res://scenes/TitleScreen.gd" id="1_3d7ge"]
 [ext_resource type="Script" path="res://scenes/Background.gd" id="2_1klbb"]
-[ext_resource type="Texture2D" uid="uid://bsb7eolyu8jxq" path="res://assets/backgrounds/bgprototype.png" id="4_02ev8"]
-[ext_resource type="Texture2D" uid="uid://cgmcnleqs5way" path="res://assets/sprites/guard2 open.png" id="4_lrm7n"]
+[ext_resource type="Texture2D" uid="uid://bhqns11fo6pup" path="res://assets/backgrounds/bgprototype.png" id="4_02ev8"]
+[ext_resource type="Texture2D" uid="uid://bepirtkjyyc3t" path="res://assets/sprites/guard2 open.png" id="4_lrm7n"]
 [ext_resource type="Theme" uid="uid://dy4iynna5afl2" path="res://assets/ui/menu_theme.tres" id="5_b8bfe"]
 [ext_resource type="Script" path="res://src/options_menu.gd" id="5_e0jm1"]
+[ext_resource type="AudioStream" uid="uid://y1ebtcpfhy25" path="res://assets/music/Town_-_Base_Camp.ogg" id="7_ce7te"]
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
@@ -183,6 +184,10 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 12
 theme_override_font_sizes/font_size = 32
 text = "Quit"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_ce7te")
+volume_db = -4.208
 
 [connection signal="value_changed" from="options_menu/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/music_slider" to="options_menu" method="_on_music_slider_value_changed"]
 [connection signal="value_changed" from="options_menu/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer2/sound_slider" to="options_menu" method="_on_sound_slider_value_changed"]
