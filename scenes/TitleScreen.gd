@@ -14,7 +14,7 @@ func _ready():
 	rollover.stream = rollover_sound
 	click.volume_db = Global.sound_volume - 20.0
 	rollover.volume_db = Global.sound_volume - 20.0
-	$AudioStreamPlayer2D.volume_db = Global.sound_volume -5.0
+	$AudioStreamPlayer2D.volume_db = Global.music_volume - 5.0
 	$AudioStreamPlayer2D.play()
 	
 func _on_start_button_pressed():

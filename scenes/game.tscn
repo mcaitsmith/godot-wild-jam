@@ -281,6 +281,7 @@ size_flags_stretch_ratio = 1.6
 theme_override_font_sizes/font_size = 32
 text = "X"
 
+[connection signal="dialogue_ended" from="canvas/dialogue/DialogueBox" to="canvas/dialogue" method="_on_dialogue_box_dialogue_ended"]
 [connection signal="dialogue_signal" from="canvas/dialogue/DialogueBox" to="canvas/dialogue" method="_on_dialogue_box_dialogue_signal"]
 [connection signal="pressed" from="canvas/dialogue/Button" to="canvas/dialogue" method="_on_button_pressed"]
 [connection signal="pressed" from="canvas/pause_menu/PanelContainer/HBoxContainer/VBoxContainer/continue" to="canvas/pause_menu" method="_on_continue_pressed"]

@@ -176,6 +176,7 @@ horizontal_alignment = 1
 layout_mode = 2
 min_value = -30.0
 max_value = 30.0
+value = -4.0
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="options_menu/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -190,6 +191,7 @@ horizontal_alignment = 1
 layout_mode = 2
 min_value = -30.0
 max_value = 30.0
+value = -5.0
 
 [node name="close" type="Button" parent="options_menu/PanelContainer"]
 layout_mode = 2
@@ -263,9 +265,15 @@ libraries = {
 "": SubResource("AnimationLibrary_jex8a")
 }
 
-[connection signal="value_changed" from="options_menu/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/music_slider" to="options_menu" method="_on_music_slider_value_changed"]
-[connection signal="value_changed" from="options_menu/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer2/sound_slider" to="options_menu" method="_on_sound_slider_value_changed"]
+[connection signal="value_changed" from="options_menu/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/music_slider" to="." method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="options_menu/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer2/sound_slider" to="." method="_on_sound_slider_value_changed"]
 [connection signal="pressed" from="options_menu/PanelContainer/close" to="options_menu" method="_on_close_pressed"]
+[connection signal="mouse_entered" from="StartButton" to="." method="_on_start_button_mouse_entered"]
+[connection signal="mouse_exited" from="StartButton" to="." method="_on_start_button_mouse_exited"]
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="mouse_entered" from="OptionsButton" to="." method="_on_options_button_mouse_entered"]
+[connection signal="mouse_exited" from="OptionsButton" to="." method="_on_options_button_mouse_exited"]
 [connection signal="pressed" from="OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="mouse_entered" from="QuitButton" to="." method="_on_quit_button_mouse_entered"]
+[connection signal="mouse_exited" from="QuitButton" to="." method="_on_quit_button_mouse_exited"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
