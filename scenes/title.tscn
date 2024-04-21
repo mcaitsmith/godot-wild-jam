@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scenes/TitleScreen.gd" id="1_3d7ge"]
 [ext_resource type="Script" path="res://scenes/Background.gd" id="2_1klbb"]
-[ext_resource type="Texture2D" uid="uid://bsb7eolyu8jxq" path="res://assets/backgrounds/bgprototype.png" id="4_02ev8"]
-[ext_resource type="Texture2D" uid="uid://cgmcnleqs5way" path="res://assets/sprites/guard2 open.png" id="4_lrm7n"]
+[ext_resource type="Texture2D" uid="uid://dlt2irfqm26l5" path="res://assets/backgrounds/bgprototype.png" id="4_02ev8"]
+[ext_resource type="Texture2D" uid="uid://cijmfhbax4l70" path="res://assets/sprites/guard2 open.png" id="4_lrm7n"]
 [ext_resource type="Theme" uid="uid://dy4iynna5afl2" path="res://assets/ui/menu_theme.tres" id="5_b8bfe"]
 [ext_resource type="Script" path="res://src/options_menu.gd" id="5_e0jm1"]
 [ext_resource type="Texture2D" uid="uid://r4tc0isa4dol" path="res://assets/ui/banner.png" id="6_2qccr"]
