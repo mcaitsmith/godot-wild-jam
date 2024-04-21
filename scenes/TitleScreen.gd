@@ -16,11 +16,15 @@ func _ready():
 	rollover.volume_db = Global.sound_volume - 20.0
 	$AudioStreamPlayer2D.volume_db = Global.music_volume - 5.0
 	$AudioStreamPlayer2D.play()
-
+	
 func _on_start_button_pressed():
 	click.play()
-	get_tree().change_scene_to_packed(main_game)
+	$BlackScreen/TransitionPlayer.play('transition')
+	#get_tree().change_scene_to_packed(main_game)
 	pass # Replace with function body.
+
+func change_to_game_scene():
+	get_tree().change_scene_to_packed(main_game)
 
 func _on_quit_button_pressed():
 	click.play()

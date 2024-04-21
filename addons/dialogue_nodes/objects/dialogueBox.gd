@@ -122,6 +122,7 @@ func _enter_tree():
 	dialogue.bbcode_enabled = true
 	dialogue.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	dialogue.custom_effects = custom_effects
+	dialogue.push_font_size(80)
 
 	# setup options
 	options = BoxContainer.new()

@@ -1,12 +1,71 @@
-[gd_scene load_steps=8 format=3 uid="uid://bmctjgvthy81d"]
+[gd_scene load_steps=10 format=3 uid="uid://bmctjgvthy81d"]
 
 [ext_resource type="Script" path="res://scenes/TitleScreen.gd" id="1_3d7ge"]
 [ext_resource type="Script" path="res://scenes/Background.gd" id="2_1klbb"]
-[ext_resource type="Texture2D" uid="uid://bhqns11fo6pup" path="res://assets/backgrounds/bgprototype.png" id="4_02ev8"]
-[ext_resource type="Texture2D" uid="uid://bepirtkjyyc3t" path="res://assets/sprites/guard2 open.png" id="4_lrm7n"]
+[ext_resource type="Texture2D" uid="uid://dlt2irfqm26l5" path="res://assets/backgrounds/bgprototype.png" id="4_02ev8"]
+[ext_resource type="Texture2D" uid="uid://cijmfhbax4l70" path="res://assets/sprites/guard2 open.png" id="4_lrm7n"]
 [ext_resource type="Theme" uid="uid://dy4iynna5afl2" path="res://assets/ui/menu_theme.tres" id="5_b8bfe"]
 [ext_resource type="Script" path="res://src/options_menu.gd" id="5_e0jm1"]
 [ext_resource type="AudioStream" uid="uid://y1ebtcpfhy25" path="res://assets/music/Town_-_Base_Camp.ogg" id="7_ce7te"]
+
+[sub_resource type="Animation" id="Animation_yaa3s"]
+resource_name = "transition"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(4),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"change_to_game_scene"
+}]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../AudioStreamPlayer2D:volume_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-4.208, -80.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jex8a"]
+_data = {
+"transition": SubResource("Animation_yaa3s")
+}
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
@@ -190,6 +249,21 @@ text = "Quit"
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_ce7te")
 volume_db = -4.208
+
+[node name="BlackScreen" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="TransitionPlayer" type="AnimationPlayer" parent="BlackScreen"]
+libraries = {
+"": SubResource("AnimationLibrary_jex8a")
+}
 
 [connection signal="value_changed" from="options_menu/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/music_slider" to="." method="_on_music_slider_value_changed"]
 [connection signal="value_changed" from="options_menu/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer2/sound_slider" to="." method="_on_sound_slider_value_changed"]
