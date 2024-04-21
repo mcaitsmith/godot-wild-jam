@@ -41,6 +41,12 @@ func setSprite(sprite_name,smooth = true,duration = 0.5):
 	else:
 		spritenode.texture = sprite
 	pass
-func kill():
-	queue_free()
-	pass
+func exit_character(duration = 1):
+	var tween = get_tree().create_tween()
+	tween.tween_property(self,"modulate:a",0,duration)
+	await get_tree().create_timer(duration).timeout
+	tween.kill()
+	kill_character()
+func kill_character():
+	self.queue_free()
+	return

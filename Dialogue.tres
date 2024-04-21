@@ -62,7 +62,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(327.999, 433),
+"size": Vector2(327.998, 433),
 "speaker": 3
 },
 "1_102": {
@@ -114,7 +114,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.001, 433),
+"size": Vector2(300.002, 433),
 "speaker": 2
 },
 "1_106": {
@@ -127,7 +127,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.002, 433),
+"size": Vector2(300.004, 433),
 "speaker": 1
 },
 "1_107": {
@@ -306,7 +306,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 433),
+"size": Vector2(300.002, 433),
 "speaker": 2
 },
 "1_119": {
@@ -371,7 +371,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(328.002, 433),
+"size": Vector2(328.004, 433),
 "speaker": 3
 },
 "1_123": {
@@ -384,7 +384,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(328.002, 433),
+"size": Vector2(328, 433),
 "speaker": 3
 },
 "1_124": {
@@ -397,7 +397,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 433),
+"size": Vector2(300.004, 433),
 "speaker": 0
 },
 "1_125": {
@@ -410,7 +410,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(328.005, 433),
+"size": Vector2(328.008, 433),
 "speaker": 3
 },
 "1_126": {
@@ -459,7 +459,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.004, 433),
+"size": Vector2(300.002, 433),
 "speaker": 2
 },
 "1_129": {
@@ -576,7 +576,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 433),
+"size": Vector2(300.002, 433),
 "speaker": 2
 },
 "1_137": {
@@ -693,7 +693,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(315.996, 429),
+"size": Vector2(315.998, 429),
 "speaker": 3
 },
 "1_145": {
@@ -836,7 +836,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 433),
+"size": Vector2(300.002, 433),
 "speaker": 1
 },
 "1_155": {
@@ -953,7 +953,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 433),
+"size": Vector2(300.008, 433),
 "speaker": 2
 },
 "1_163": {
@@ -1018,7 +1018,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(327.995, 433),
+"size": Vector2(327.996, 433),
 "speaker": 3
 },
 "1_168": {
@@ -1070,7 +1070,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.001, 433),
+"size": Vector2(300.004, 433),
 "speaker": 1
 },
 "1_171": {
@@ -1083,7 +1083,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.004, 433),
+"size": Vector2(300.002, 433),
 "speaker": 2
 },
 "1_172": {
@@ -1327,7 +1327,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.004, 433),
+"size": Vector2(300.003, 433),
 "speaker": 2
 },
 "1_21": {
@@ -1571,7 +1571,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.007, 433),
+"size": Vector2(300.006, 433),
 "speaker": 0
 },
 "1_38": {
@@ -1597,7 +1597,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(328, 433),
+"size": Vector2(328.002, 433),
 "speaker": 3
 },
 "1_4": {
@@ -1740,12 +1740,12 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.001, 433),
+"size": Vector2(300.002, 433),
 "speaker": 0
 },
 "1_5": {
 "dialogue": "Ho there, traveler! Think you can just walk in through these venerable gates? ",
-"offset": Vector2(-340, -220),
+"offset": Vector2(-360, -220),
 "options": {
 0: {
 "condition": {},
@@ -1753,7 +1753,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 433),
+"size": Vector2(300, 398.849),
 "speaker": 1
 },
 "1_50": {
@@ -2026,7 +2026,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.006, 433),
+"size": Vector2(300.007, 433),
 "speaker": 1
 },
 "1_7": {
@@ -2052,7 +2052,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.002, 433),
+"size": Vector2(300, 433),
 "speaker": 1
 },
 "1_71": {
@@ -2101,7 +2101,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 433),
+"size": Vector2(300.001, 433),
 "speaker": 1
 },
 "1_74": {
@@ -2114,7 +2114,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.003, 433),
+"size": Vector2(300.006, 433),
 "speaker": 2
 },
 "1_75": {
@@ -2348,7 +2348,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.001, 433),
+"size": Vector2(300.002, 433),
 "speaker": 2
 },
 "1_91": {
@@ -2361,7 +2361,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.004, 433),
+"size": Vector2(300.006, 433),
 "speaker": 1
 },
 "1_92": {
@@ -2480,7 +2480,7 @@ nodes = {
 },
 "3_3": {
 "link": &"1_1",
-"offset": Vector2(-20, -200),
+"offset": Vector2(-40, -80),
 "signalValue": "character_enter,guard2,right,smile"
 },
 "3_4": {
