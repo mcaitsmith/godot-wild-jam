@@ -836,7 +836,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 433),
+"size": Vector2(300.002, 433),
 "speaker": 1
 },
 "1_155": {
@@ -953,7 +953,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 433),
+"size": Vector2(300.008, 433),
 "speaker": 2
 },
 "1_163": {
@@ -1914,7 +1914,7 @@ nodes = {
 },
 "1_5": {
 "dialogue": "Ho there, traveler! Think you can just walk in through these venerable gates? ",
-"offset": Vector2(-340, -220),
+"offset": Vector2(-360, -220),
 "options": {
 0: {
 "condition": {},
@@ -1922,7 +1922,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 433),
+"size": Vector2(300, 398.849),
 "speaker": 1
 },
 "1_50": {
@@ -2221,7 +2221,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.002, 433),
+"size": Vector2(300, 433),
 "speaker": 1
 },
 "1_71": {
@@ -2270,7 +2270,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 433),
+"size": Vector2(300.001, 433),
 "speaker": 1
 },
 "1_74": {
@@ -2517,7 +2517,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.001, 433),
+"size": Vector2(300.002, 433),
 "speaker": 2
 },
 "1_91": {
@@ -2530,7 +2530,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.004, 433),
+"size": Vector2(300.006, 433),
 "speaker": 1
 },
 "1_92": {
@@ -2749,7 +2749,7 @@ nodes = {
 },
 "3_3": {
 "link": &"1_1",
-"offset": Vector2(-20, -200),
+"offset": Vector2(-40, -80),
 "signalValue": "character_enter,guard2,right,smile"
 },
 "3_30": {

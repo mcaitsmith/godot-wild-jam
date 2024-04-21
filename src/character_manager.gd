@@ -31,7 +31,9 @@ func enter(character_name,location,sprite_name = "default",smooth = true):
 		tween.kill()
 	else:
 		chara.get_child(0).texture = sprite
+func exit():
 	
+	pass
 func _on_character(array):
 	var method_array = array.split(',')
 	match method_array[0]:
@@ -40,6 +42,9 @@ func _on_character(array):
 		"expression":
 			var chara = get_character(method_array[1])
 			chara.setSprite(method_array[1]+" "+method_array[2])
+		"exit":
+			var chara = get_character(method_array[1])
+			chara.exit_character()
 		_:
 			pass
 	pass
