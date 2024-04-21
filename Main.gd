@@ -39,3 +39,11 @@ func _on_dialogue_box_dialogue_signal(value):
 	#match(value):
 		#'explode': explode()
 	pass # Replace with function body.
+
+
+func _on_dialogue_box_dialogue_ended():
+	# fade out the music
+	Signalbus.stopmusic.emit()
+	
+	get_tree().change_scene_to_file("res://scenes/title.tscn")
+	pass # Replace with function body.
